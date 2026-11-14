@@ -1,3 +1,8 @@
+"""Configuration for the Aurora Flask app.
+
+Reads settings from environment variables with local defaults, and defines
+development, testing, and production configs selected by name.
+"""
 import os
 from dotenv import load_dotenv
 

@@ -1,3 +1,8 @@
+"""Goal model: a personal goal a user sets for themselves.
+
+Stores the title, an optional description, a due date, and whether the
+goal is completed, linked to the user who set it.
+"""
 from db import db
 from datetime import datetime
 

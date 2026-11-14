@@ -1,3 +1,8 @@
+"""Database handle for the Aurora Flask app.
+
+Exposes a single shared SQLAlchemy object that the models import, keeping
+all database setup in one place.
+"""
 from flask_sqlalchemy import SQLAlchemy
 
 # Create the SQLAlchemy

@@ -1,3 +1,8 @@
+"""Journal model: one journal entry per row.
+
+Stores the entry title and content with a timestamp, linked to the user
+who wrote it.
+"""
 from db import db
 from datetime import datetime
 

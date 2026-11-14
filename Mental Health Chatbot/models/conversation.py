@@ -1,3 +1,8 @@
+"""Conversation model: one stored chat exchange per row.
+
+Records the user message, the assistant response, and when the exchange
+happened, linked to the user who had the conversation.
+"""
 from db import db
 from datetime import datetime
 

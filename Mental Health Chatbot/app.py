@@ -1,3 +1,8 @@
+"""Flask application factory for the Aurora mental health support app.
+
+Creates the app, loads configuration, initialises extensions and login
+handling, registers every blueprint, and creates the database tables.
+"""
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager  # Add this import

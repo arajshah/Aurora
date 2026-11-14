@@ -1,3 +1,8 @@
+"""Mood model: one mood check-in per row.
+
+Stores a score on a 1-10 scale with an optional note and a timestamp,
+linked to the user who logged it.
+"""
 from db import db
 from datetime import datetime
 
