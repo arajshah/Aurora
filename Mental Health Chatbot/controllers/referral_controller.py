@@ -1,3 +1,9 @@
+"""Professional referral search endpoint.
+
+Reads the local professionals directory and returns the entries
+whose location and specialty match the request.
+"""
+
 from flask import Blueprint, request, jsonify
 import json
 
