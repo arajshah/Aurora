@@ -1,3 +1,10 @@
+"""Chat routes for the Aurora conversation page.
+
+Serves the chat page for signed-in users and streams assistant
+replies as server-sent events, saving each finished exchange to
+the conversation log.
+"""
+
 from flask import Blueprint, render_template, request, jsonify, session, redirect, url_for, Response
 import json
 from services.deepseek_service import deepseek_service
