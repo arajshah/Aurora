@@ -1,3 +1,9 @@
+"""Static page routes for the Aurora site.
+
+Serves the landing page plus the referral and work plan pages.
+The chat page itself lives in the conversation controller.
+"""
+
 from flask import Blueprint, render_template
 
 pages_bp = Blueprint("pages_bp", __name__)
