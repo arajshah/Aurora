@@ -1,4 +1,10 @@
 # controllers/workplan_controller.py
+"""Personal work plan generation endpoint.
+
+Builds a prompt from the user mood and goals, asks the chat
+service for a plan, and returns it as JSON.
+"""
+
 
 from flask import Blueprint, request, jsonify
 from services.deepseek_service import deepseek_service
