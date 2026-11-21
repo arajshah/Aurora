@@ -1,3 +1,9 @@
+"""Resource browsing routes for the Aurora site.
+
+Loads the local resources directory and serves the resource list,
+detail, and bookmarked-resource pages.
+"""
+
 from flask import Blueprint, render_template, abort, request, redirect, url_for, session
 import json
 import os
