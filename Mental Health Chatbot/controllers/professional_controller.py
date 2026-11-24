@@ -1,3 +1,9 @@
+"""Professional directory blueprint: psychologists, psychiatrists, and counselors.
+
+Serves the professional directory pages from sample listings of licensed
+professionals, with filters by specialty and a detail view per professional.
+"""
+
 from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify, session
 from datetime import datetime, timedelta
 from flask import url_for
