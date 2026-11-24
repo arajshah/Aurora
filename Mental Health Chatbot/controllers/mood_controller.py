@@ -1,3 +1,9 @@
+"""Mood tracking blueprint: daily scores, history, and statistics.
+
+Routes let a logged-in user record a mood score from 1 to 10 with an optional note,
+fetch past entries, and get summary stats such as average, highest, and lowest scores.
+"""
+
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
 from db import db
 from models.mood import Mood
