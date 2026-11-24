@@ -1,3 +1,10 @@
+"""Journal and goals blueprint: entries, prompts, and goal tracking.
+
+Routes let a logged-in user list journal entries, create, edit, and delete them,
+view writing prompts, and manage goals, with a streak helper that counts
+consecutive journaling days.
+"""
+
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
 from db import db
 from models.journal import Journal
