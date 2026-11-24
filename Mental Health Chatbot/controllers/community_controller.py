@@ -1,3 +1,10 @@
+"""Community blueprint: forums, support groups, and events.
+
+Routes serve the community home page, forum threads, support-group listings,
+and event pages, backed by the ForumTopic, ForumPost, SupportGroup, and Event models.
+Sample topics, posts, groups, and events are placeholder data until the database-backed versions land.
+"""
+
 from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify, session
 from models.community import ForumTopic, ForumPost, SupportGroup, Event, GroupMembership
 from models.user import User
