@@ -1,3 +1,5 @@
+"""DeepSeek chat service: streams model replies over HTTP."""
+
 import requests
 import json
 from typing import Dict, Any, Generator
