@@ -1,3 +1,5 @@
+"""Forum topic model: title, description, and creation time."""
+
 from db import db
 from datetime import datetime
 
