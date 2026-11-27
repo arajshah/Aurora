@@ -1,3 +1,5 @@
+"""User account routes: registration and login."""
+
 from flask import Blueprint, render_template, request, redirect, url_for, session, jsonify
 from db import db
 from models.user import User
